@@ -31,8 +31,8 @@ RUN \
     git clone https://github.com/qwebirc/qwebirc /qwebirc ; \
     cd /qwebirc ; \
     pip install --no-cache-dir -r requirements.txt ; \
-    #pip install --no-cache-dir cryptography==37.0.4 ; \
-    #pip install --no-cache-dir pyOpenSSL==22.0.0 ; \
+    #pip install --no-cache-dir cryptography==3.3.2 ; \
+    #pip install --no-cache-dir pyOpenSSL==21.0.0 ; \
     pip install --no-cache-dir pyOpenSSL ; \
     #pip install --no-cache-dir service-identity==21.1.0 ; \
     pip install --no-cache-dir service-identity ; \
