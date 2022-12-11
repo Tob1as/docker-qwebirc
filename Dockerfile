@@ -28,6 +28,7 @@ RUN \
     #   git \
     ; \
     \
+    pip install --no-cache-dir typing ; \
     git clone https://github.com/qwebirc/qwebirc /qwebirc ; \
     cd /qwebirc ; \
     pip install --no-cache-dir -r requirements.txt ; \
