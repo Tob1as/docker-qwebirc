@@ -1,12 +1,12 @@
 version: '2.4'
 services:
     
-  # https://github.com/Tob1asDocker/qwebirc
+  # https://github.com/Tob1as/docker-qwebirc
   qwebirc:
     #build:
     #  context: ./
     #  dockerfile: Dockerfile
-    image: ghcr.io/tob1asdocker/qwebirc:latest
+    image: ghcr.io/tob1as/docker-qwebirc:latest
     container_name: qwebirc
     restart: unless-stopped
     ports:

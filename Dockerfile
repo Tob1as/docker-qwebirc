@@ -7,7 +7,7 @@ LABEL org.opencontainers.image.authors="the qwebirc project, Tobias Hargesheimer
     org.opencontainers.image.revision="${VCS_REF}" \
     org.opencontainers.image.licenses="GPLv2" \
     org.opencontainers.image.url="ghcr.io/tob1asdocker/qwebirc:latest" \
-    org.opencontainers.image.source="https://github.com/Tob1asDocker/qwebirc"
+    org.opencontainers.image.source="https://github.com/Tob1as/docker-qwebirc"
 
 SHELL ["/bin/sh", "-euxo", "pipefail", "-c"]
 

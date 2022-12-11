@@ -8,7 +8,7 @@
 
 ## qwebirc is a fast, easy to use, free and open source IRC client
 ## https://qwebirc.org/ & https://github.com/qwebirc/qwebirc/
-## https://github.com/Tob1asDocker/qwebirc
+## https://github.com/Tob1as/docker-qwebirc
 
 #---
 #
@@ -38,7 +38,7 @@ spec:
     spec:
       containers:
         - name: qwebirc
-          image: ghcr.io/tob1asdocker/qwebirc:latest
+          image: ghcr.io/tob1as/docker-qwebirc:latest
           imagePullPolicy: Always #IfNotPresent 
           env:
           - name: HTML_COMPILE
