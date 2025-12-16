@@ -6,8 +6,8 @@ LABEL org.opencontainers.image.authors="the qwebirc project, Tobias Hargesheimer
     org.opencontainers.image.created="${BUILD_DATE}" \
     org.opencontainers.image.revision="${VCS_REF}" \
     org.opencontainers.image.licenses="GPLv2" \
-    org.opencontainers.image.url="ghcr.io/tob1asdocker/qwebirc:latest" \
-    org.opencontainers.image.source="https://github.com/Tob1as/docker-qwebirc"
+    org.opencontainers.image.url="https://github.com/Tob1as/docker-qwebirc" \
+    org.opencontainers.image.source="https://codeberg.org/qwebirc/qwebirc"
 
 SHELL ["/bin/sh", "-euxo", "pipefail", "-c"]
 
@@ -29,7 +29,7 @@ RUN \
     ; \
     \
     pip install --no-cache-dir typing ; \
-    git clone https://github.com/qwebirc/qwebirc /qwebirc ; \
+    git clone --branch master --single-branch https://codeberg.org/qwebirc/qwebirc.git /qwebirc ; \
     cd /qwebirc ; \
     pip install --no-cache-dir -r requirements.txt ; \
     #pip install --no-cache-dir cryptography==3.3.2 ; \
