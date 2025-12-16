@@ -11,8 +11,8 @@ on:
   #    - 'config.py'
   #    - '.github/workflows/build_docker_images.yaml'
   workflow_dispatch:
-  schedule:
-    - cron: '30 5 27 * *'  # At 05:30 on day-of-month 27.
+  #schedule:
+  #  - cron: '30 5 27 * *'  # At 05:30 on day-of-month 27.
 
 defaults:
   run:
