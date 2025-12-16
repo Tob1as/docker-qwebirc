@@ -1,5 +1,8 @@
 FROM python:2.7-alpine
 
+ARG BUILD_DATE
+ARG VCS_REF
+
 LABEL org.opencontainers.image.authors="the qwebirc project, Tobias Hargesheimer <docker@ison.ws>" \
     org.opencontainers.image.title="qwebirc" \
     org.opencontainers.image.description="qwebirc is a fast, easy to use, free and open source IRC client" \
@@ -16,6 +19,7 @@ COPY docker-entrypoint.sh /usr/local/bin/docker-entrypoint.sh
 RUN \
     addgroup --gid 1000 qwebirc ; \
     adduser --system --shell /sbin/nologin --uid 1000 --ingroup qwebirc --home /qwebirc qwebirc ; \
+    #apk update && apk upgrade --no-cache ; \
     apk add --no-cache --virtual .build-deps \
         gcc \
         musl-dev \
